@@ -243,8 +243,6 @@
             </div>
         </div>
     </section>
-
-    <br><br><br>
     <section class="about py-5 d-flex align-items-center mb-5">
         <div class="container text-center text-md-start">
 
