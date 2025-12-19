@@ -300,5 +300,5 @@
 
             });
         });
-    </script>pp
+    </script>
 @endsection
