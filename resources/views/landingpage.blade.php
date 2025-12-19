@@ -124,7 +124,7 @@
         }
 
         .small-mockup {
-            width: 360px;
+            width: 260px;
             bottom: -40px;
             right: -20px;
         }
@@ -136,11 +136,11 @@
         }
 
         /*
-        .flex-lg-row-reverse .small-mockup {
-            left: -60px;
-            bottom: -20px;
-            right: auto;
-        } */
+            .flex-lg-row-reverse .small-mockup {
+                left: -60px;
+                bottom: -20px;
+                right: auto;
+            } */
         .bussines {
             background: #F9C75B;
             margin-bottom: 5rem;
@@ -200,6 +200,34 @@
             height: 12px;
             border-radius: 50%;
         }
+
+        .business-tabs {
+            max-width: 100%;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            scrollbar-width: none;
+        }
+
+        .business-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tab-btn {
+            flex-shrink: 0;
+            border: none;
+            background: transparent;
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active {
+            background: #f5b529;
+            color: #fff;
+        }
+
 
         /* Responsif */
         @media (max-width: 991px) {
@@ -618,7 +646,7 @@
         </div>
     </section>
     <section class="py-5 bussines">
-        <div class="container">
+        <div class="container-fluid px-3 px-md-5">
 
             <!-- Judul -->
             <h2 class="text-center fw-bold text-white mb-4">
@@ -626,7 +654,7 @@
             </h2>
 
             <!-- Tabs -->
-            <div class="d-flex justify-content-center mb-5">
+            <div class="d-flex justify-content-center mb-5 px-3">
                 <div class="business-tabs p-2 rounded-pill bg-white d-flex gap-4">
                     <button class="tab-btn active">Bisnis Retail</button>
                     <button class="tab-btn">Bisnis Jasa</button>
