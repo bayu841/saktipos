@@ -167,6 +167,87 @@
                 max-width: 100%;
             }
         }
+
+   .solusi-section {
+  background-color: #F9C75B;
+  padding: 60px 0;
+  margin-bottom: 100px; /* JARAK KE SECTION BAWAH */
+}
+
+
+  .solusi-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 40px 24px;
+    text-align: center;
+    height: 100%;
+  }
+
+ .solusi-card img {
+  max-width: 160px; /* sebelumnya 120px */
+  margin-bottom: 24px;
+}
+
+  .solusi-card p {
+    color: #FFAE00;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+ .btn-hero {
+            background-color: #f6a800;
+            color: #ffffff;
+            border-radius: 50px;
+            padding: 12px 28px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn-hero:hover {
+            background-color: #e09500;
+            color: #ffffff;
+        }
+
+
+
+
+
+
+.help-section {
+  padding: 80px 0;
+  margin-top: 100px; /* JARAK DARI SECTION ATAS */
+}
+  .help-title {
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .contact-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border-radius: 16px;
+    border: 1px solid #FFAE00;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-weight: 500;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #FFAE00;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
     </style>
 
     <section class="hero-section">
@@ -283,6 +364,73 @@
 
         </div>
     </section>
+
+
+
+
+  <section class="solusi-section">
+  <div class="container text-center">
+    <h5 class="fw-semibold text-white mb-5">
+      Solusi yang ditawarkan
+    </h5>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="solusi-card">
+          <img src="{{ asset('image/2bs.png') }}" alt="">
+          <p>
+            Pengelolaan Stok Barang<br>
+            yang lebih akurat
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="solusi-card">
+          <img src="{{ asset('image/1bs.png') }}" alt="">
+          <p>
+            Pencatatan Keuangan<br>
+            lebih efisien
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="solusi-card">
+          <img src="{{ asset('image/3bs.png') }}" alt="">
+          <p>
+            Kategori produk<br>
+            lebih tersusun dan rapi
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4">
+        <a href="#" class="btn btn-hero">
+                            Jelajahi Harga
+                        </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="help-section text-center">
+  <div class="container">
+    <h5 class="help-title">
+      Ada kendala?<br>
+      Hubungi nomor di bawah ini
+    </h5>
+
+    <div class="contact-box">
+      <div class="contact-icon">
+        <i class="bi bi-telephone-fill"></i>
+      </div>
+      <span>+123-456-789</span>
+    </div>
+  </div>
+</section>
 
 
     <script>
