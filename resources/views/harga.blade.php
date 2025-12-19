@@ -154,7 +154,7 @@
     <section class="hero-section">
         <img src="{{ asset('image/hargabg.png') }}" class="hero-bg" alt="Hero">
 
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay"></div>    
 
         <div class="container hero-wrapper">
             <div class="row">
