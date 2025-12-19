@@ -45,7 +45,7 @@
         }
 
         .hero-content p {
-            font-size: 14px;
+            font-size: 15px;
             line-height: 1.7;
             opacity: 0.9;
             margin-bottom: 24px;
@@ -57,7 +57,7 @@
             color: #ffffff;
             border-radius: 50px;
             padding: 12px 28px;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 600;
             text-decoration: none;
         }
@@ -66,8 +66,6 @@
             background-color: #e09500;
             color: #ffffff;
         }
-
-
 
         .price {
             padding-top: 100px;
@@ -91,8 +89,6 @@
                 padding-top: 70px;
             }
         }
-
-
 
         .feature-section {
             padding: 80px 0;
@@ -154,7 +150,7 @@
     <section class="hero-section">
         <img src="{{ asset('image/hargabg.png') }}" class="hero-bg" alt="Hero">
 
-        <div class="hero-overlay"></div>    
+        <div class="hero-overlay"></div>
 
         <div class="container hero-wrapper">
             <div class="row">
