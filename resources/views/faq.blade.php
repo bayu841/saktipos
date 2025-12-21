@@ -3,9 +3,10 @@
     <br><br><br>
     <style>
         .hero-section {
-            padding: 100px 0;
+            padding: 10px 0;
             position: relative;
             background: #F9C75B;
+    
         }
 
         .hero-laptop {
@@ -17,7 +18,7 @@
         }
 
         .hero-right img {
-            width: 80%;
+            width: 90%;
         }
 
         .another-question h2 {

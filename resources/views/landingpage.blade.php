@@ -135,31 +135,18 @@
             left: -30px;
         }
 
-        /*
-            .flex-lg-row-reverse .small-mockup {
-                left: -60px;
-                bottom: -20px;
-                right: auto;
-            } */
-        .bussines {
-            background: #F9C75B;
-            margin-bottom: 5rem;
-        }
 
-        .business-tabs {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
 
         .tab-btn {
             background: transparent;
             border: none;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 17px;
             color: #E29E0B;
             padding: 10px 20px;
             border-radius: 40px;
             transition: .3s;
+            width: 18.3%;
         }
 
         .tab-btn.active {
@@ -203,29 +190,52 @@
 
         .business-tabs {
             max-width: 100%;
+            width: 100%;
             overflow-x: auto;
             flex-wrap: nowrap;
             white-space: nowrap;
             scrollbar-width: none;
+            -webkit-overflow-scrolling: touch;
         }
-
+        .tab-btn {
+    flex: 0 0 auto;
+}
         .business-tabs::-webkit-scrollbar {
             display: none;
-        }
 
-        .tab-btn {
-            flex-shrink: 0;
-            border: none;
-            background: transparent;
-            padding: 8px 16px;
-            border-radius: 999px;
-            font-size: 14px;
-            white-space: nowrap;
         }
-
+        .business-tabs {
+    scrollbar-width: none; /* Firefox */
+}
         .tab-btn.active {
             background: #f5b529;
             color: #fff;
+
+        }
+
+        .tab-content-item {
+            display: none;
+            opacity: 0;
+            transform: translateY(18px);
+            transition: all 0.45s ease;
+        }
+
+        .tab-content-item.active {
+            display: block;
+
+            animation: fadeUp 0.45s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
 
@@ -656,57 +666,190 @@
             <!-- Tabs -->
             <div class="d-flex justify-content-center mb-5 px-3">
                 <div class="business-tabs p-2 rounded-pill bg-white d-flex gap-4">
-                    <button class="tab-btn active">Bisnis Retail</button>
-                    <button class="tab-btn">Bisnis Jasa</button>
-                    <button class="tab-btn">Bisnis F&B</button>
-                    <button class="tab-btn">Bisnis Grosir</button>
-                    <button class="tab-btn">Bisnis Beauty</button>
+                    <button class="tab-btn active" data-target="retail-barang">Bisnis Retail</button>
+                    <button class="tab-btn" data-target="retail-jasa">Bisnis Jasa</button>
+                    <button class="tab-btn" data-target="retail-fnb">Bisnis F&B</button>
+                    <button class="tab-btn" data-target="retail-grosir">Bisnis Grosir</button>
+                    <button class="tab-btn" data-target="retail-beauty">Bisnis Digital</button>
                 </div>
             </div>
 
-            <!-- Konten -->
-            <div class="row align-items-center">
+            <!-- Konten Tabs -->
+            <div class="tab-content-wrapper">
 
-                <!-- Kiri -->
-                <div class="col-lg-6">
-                    <h3 class="fw-bold text-white mb-3">Bisnis Retail</h3>
-
-                    <p class="text-white mb-4">
-                        Atur stok, kategori, dan varian produk dengan cepat,
-                        sehingga operasional toko tetap rapi dan terkendali setiap hari.
-                    </p>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3">
-                            <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                <!-- TAB 1: Retail Barang -->
+                <div class="tab-content-item active" id="retail-barang">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-white mb-3">Bisnis Retail</h3>
+                            <p class="text-white mb-4">
+                                Atur stok, kategori, dan varian produk dengan cepat,
+                                sehingga operasional toko tetap rapi dan terkendali setiap hari.
+                            </p>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
+                            </div>
                         </div>
-                        <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3">
-                            <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                        <div class="col-lg-6 mt-4 mt-lg-0 text-center">
+                            <img src="{{ asset('image/retail.png') }}" class="img-fluid rounded-4" alt="">
                         </div>
-                        <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3">
-                            <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
-                        </div>
-                        <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
                     </div>
                 </div>
 
-                <!-- Kanan -->
-                <div class="col-lg-6 mt-4 mt-lg-0">
-                    <img src="{{ asset('image/retail.png') }}" class="img-fluid rounded-4" alt="">
+                <!-- TAB 2: Retail Jasa -->
+                <div class="tab-content-item" id="retail-jasa">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-white mb-3">Bisnis Jasa</h3>
+                            <p class="text-white mb-4">
+                                Retail jasa berfokus pada layanan seperti salon, bengkel,
+                                laundry, dan jasa perawatan lainnya.
+                            </p>
+                              <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="{{ asset('image/jasa.webp') }}" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 3: Bisnis F&B -->
+                <div class="tab-content-item" id="retail-fnb">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-white mb-3">Bisnis F&B</h3>
+                            <p class="text-white mb-4">
+                                Retail makanan mencakup restoran, café, bakery, dan bisnis kuliner lainnya.
+                            </p>
+                             <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="{{ asset('image/food.webp') }}" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 4: Bisnis Grosir -->
+                <div class="tab-content-item" id="retail-grosir">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-white mb-3">Bisnis Grosir</h3>
+                            <p class="text-white mb-4">
+                                Retail grosir fokus pada penjualan dalam jumlah banyak
+                                untuk reseller atau toko lain.
+                            </p>
+                             <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="{{ asset('image/grosir.jpg') }}" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 5: Bisnis Beauty -->
+                <div class="tab-content-item" id="retail-beauty">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="fw-bold text-white mb-3">Bisnis Digital</h3>
+                            <p class="text-white mb-4">
+                                Retail digital fokus pada layanan digital dan produk online.
+                            </p>
+                             <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/shop.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pengelolaan Stok yang Lebih Akurat</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/receipt.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Pencatatan Penjualan yang Cepat & Efisien</p>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box me-3">
+                                    <img src="{{ asset('image/list-ul.png') }}" width="28" alt="">
+                                </div>
+                                <p class="mb-0 fw-semibold text-white">Varian dan Kategori Produk Tersusun Rapi</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="{{ asset('image/digital.webp') }}" class="img-fluid rounded-4" alt="">
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
         </div>
     </section>
+
     <section class="faq py-5">
         <div class="container">
             <h2 class="text-center mb-4 fw-bold">FAQ</h2>
@@ -796,4 +939,20 @@
             </div>
         </div>
     </section>
+    <script>
+        const tabs = document.querySelectorAll('.tab-btn');
+        const contents = document.querySelectorAll('.tab-content-item');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+
+            });
+        });
+    </script>
 @endsection
