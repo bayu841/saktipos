@@ -3,10 +3,10 @@
     <br><br><br>
     <style>
         .hero-section {
-            padding: 10px 0;
+            padding: 50px 0;
             position: relative;
             background: #F9C75B;
-    
+
         }
 
         .hero-laptop {
