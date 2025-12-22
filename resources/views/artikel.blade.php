@@ -3,7 +3,7 @@
     <br><br><br>
     <style>
         .hero-section {
-            padding: 70px 0;
+            padding: 60px 0;
             position: relative;
             background: #F9C75B;
         }
