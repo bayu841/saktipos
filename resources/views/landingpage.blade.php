@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('content')
-    <br><br><br>
     <style>
         .hero-section {
             padding: 100px 0;
@@ -13,7 +12,7 @@
             font-size: 42px;
             font-weight: 800;
             display: inline-block;
-            color: #FFAE00;
+            color: rgb(255, 255, 255);
         }
 
         .hero-laptop {
@@ -22,6 +21,42 @@
             position: relative;
             z-index: 2;
             margin-left: 0;
+        }
+
+        .hero-bg-1 {
+            background-image: url("{{ asset('image/hero1.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .hero-bg-2 {
+            background-image: url("{{ asset('image/hero2.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .hero-bg-3 {
+            background-image: url("{{ asset('image/hero3.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .hero-bg-4 {
+            background-image: url("{{ asset('image/hero4.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            position: relative;
         }
 
         .btn-hover:hover {
@@ -178,13 +213,13 @@
         }
 
         .carousel-indicators {
-            gap: 10px;
+            gap: 8px;
         }
 
         .carousel-indicators [data-bs-target] {
-            background-color: #FFAE00;
-            width: 12px;
-            height: 12px;
+            background-color: #ffffff;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
         }
 
@@ -197,16 +232,21 @@
             scrollbar-width: none;
             -webkit-overflow-scrolling: touch;
         }
+
         .tab-btn {
-    flex: 0 0 auto;
-}
+            flex: 0 0 auto;
+        }
+
         .business-tabs::-webkit-scrollbar {
             display: none;
 
         }
+
         .business-tabs {
-    scrollbar-width: none; /* Firefox */
-}
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
         .tab-btn.active {
             background: #f5b529;
             color: #fff;
@@ -267,24 +307,23 @@
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
         </div>
 
         <div class="carousel-inner">
 
             <!-- SLIDE 1 -->
             <div class="carousel-item active">
-                <section class="hero-section d-flex align-items-center">
+                <section class="hero-section hero-bg-1 d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center">
 
                             <div class="col-lg-6 mb-5 mb-lg-0">
                                 <h1 class="fw-bold">
-                                    <span class="brand-highlight">SAKTI POS</span>
-                                    Kelola Penjualan Lebih Cepat dan Lebih Mudah
+                                    <span class="brand-highlight">SAKTI POS <br>
+                                        Kelola Penjualan Lebih Cepat dan Lebih Mudah</span>
                                 </h1>
 
-                                <p class="mt-3 text-secondary">
+                                <p class="mt-3 text-secondary text-white">
                                     Atur transaksi, stok, dan laporan bisnis Anda
                                     dalam satu sistem kasir online.
                                 </p>
@@ -293,14 +332,10 @@
                                     <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
                                         Coba Sekarang
                                     </a>
-                                    <a class="btn btn-outline-warning px-4 py-2 fw-semibold rounded-pill px-4">
+                                    <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
                                 </div>
-                            </div>
-
-                            <div class="col-lg-6 text-center">
-                                <img src="{{ asset('image/herobg.png') }}" class="img-fluid" alt="">
                             </div>
 
                         </div>
@@ -310,31 +345,29 @@
 
             <!-- SLIDE 2 -->
             <div class="carousel-item">
-                <section class="hero-section d-flex align-items-center">
+                <section class="hero-section hero-bg-2 d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center">
 
                             <div class="col-lg-6">
                                 <h1 class="fw-bold">
-                                    Pantau <span class="brand-highlight">Laporan</span> Secara Real-Time
+                                    <span class="brand-highlight text-white"> Pantau Laporan</span>
+                                    <span class="brand-highlight text-white">Secara Real-Time</span>
                                 </h1>
 
-                                <p class="mt-3 text-secondary">
+                                <p class="mt-3 text-secondary text-white">
                                     Lihat penjualan harian, bulanan, dan tahunan dengan mudah.
                                 </p>
                                 <div class="d-flex gap-3 mt-4">
                                     <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
                                         Coba Sekarang
                                     </a>
-                                    <a class="btn btn-outline-warning px-4 py-2 fw-semibold rounded-pill px-4">
+                                    <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 text-center">
-                                <img src="{{ asset('image/herobg.png') }}" class="img-fluid" alt="">
-                            </div>
 
                         </div>
                     </div>
@@ -342,70 +375,27 @@
             </div>
 
             <div class="carousel-item">
-                <section class="hero-section d-flex align-items-center">
+                <section class="hero-section hero-bg-3 d-flex align-items-center">
                     <div class="container">
                         <div class="row align-items-center">
 
                             <div class="col-lg-6 mb-5 mb-lg-0">
                                 <h1 class="fw-bold">
-                                    <span class="brand-highlight">SAKTI POS</span>
-                                    Kelola Penjualan Lebih Cepat dan Lebih Mudah
+                                    <span class="brand-highlight text-white">Satu Website</span>
+                                    <span class="text-white">Responsif di Semua Perangkat</span>
                                 </h1>
 
-                                <p class="mt-3 text-secondary">
-                                    Atur transaksi, stok, dan laporan bisnis Anda
-                                    dalam satu sistem kasir online.
+                                <p class="mt-3 text-white">
+                                    Tampilan otomatis menyesuaikan di desktop, tablet, dan smartphone
+                                    untuk pengalaman penggunaan yang nyaman kapan saja.
                                 </p>
 
                                 <div class="d-flex gap-3 mt-4">
                                     <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
-                                        Coba Sekarang
-                                    </a>
-                                    <a class="btn btn-outline-warning px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
                                 </div>
                             </div>
-
-                            <div class="col-lg-6 text-center">
-                                <img src="{{ asset('image/herobg.png') }}" class="img-fluid" alt="">
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <div class="carousel-item">
-                <section class="hero-section d-flex align-items-center">
-                    <div class="container">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6 mb-5 mb-lg-0">
-                                <h1 class="fw-bold">
-                                    <span class="brand-highlight">SAKTI POS</span>
-                                    Kelola Penjualan Lebih Cepat dan Lebih Mudah
-                                </h1>
-
-                                <p class="mt-3 text-secondary">
-                                    Atur transaksi, stok, dan laporan bisnis Anda
-                                    dalam satu sistem kasir online.
-                                </p>
-
-                                <div class="d-flex gap-3 mt-4">
-                                    <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
-                                        Coba Sekarang
-                                    </a>
-                                    <a class="btn btn-outline-warning px-4 py-2 fw-semibold rounded-pill px-4">
-                                        Lihat Fitur
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 text-center">
-                                <img src="{{ asset('image/herobg.png') }}" class="img-fluid" alt="">
-                            </div>
-
                         </div>
                     </div>
                 </section>
@@ -720,7 +710,7 @@
                                 Retail jasa berfokus pada layanan seperti salon, bengkel,
                                 laundry, dan jasa perawatan lainnya.
                             </p>
-                              <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3">
                                     <img src="{{ asset('image/shop.png') }}" width="28" alt="">
                                 </div>
@@ -753,7 +743,7 @@
                             <p class="text-white mb-4">
                                 Retail makanan mencakup restoran, café, bakery, dan bisnis kuliner lainnya.
                             </p>
-                             <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3">
                                     <img src="{{ asset('image/shop.png') }}" width="28" alt="">
                                 </div>
@@ -787,7 +777,7 @@
                                 Retail grosir fokus pada penjualan dalam jumlah banyak
                                 untuk reseller atau toko lain.
                             </p>
-                             <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3">
                                     <img src="{{ asset('image/shop.png') }}" width="28" alt="">
                                 </div>
@@ -820,7 +810,7 @@
                             <p class="text-white mb-4">
                                 Retail digital fokus pada layanan digital dan produk online.
                             </p>
-                             <div class="d-flex align-items-center mb-3">
+                            <div class="d-flex align-items-center mb-3">
                                 <div class="icon-box me-3">
                                     <img src="{{ asset('image/shop.png') }}" width="28" alt="">
                                 </div>

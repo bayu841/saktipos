@@ -14,7 +14,8 @@
 
     <script async src="//www.instagram.com/embed.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -24,30 +25,90 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body{
+
+        body {
             font-family: 'Poppins', sans-serif;
         }
+
         .navbar {
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: transparen !important;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
             position: fixed;
             width: 100%;
             z-index: 9999;
         }
 
-        .navbar ul li a {
-            font-weight: 600;
+        .navbar.scrolled {
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        footer{
+
+        .navbar ul li a {
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .navbar.scrolled ul li a {
+            font-weight: 500;
+            color: #313131;
+        }
+
+        .navbar .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .navbar:not(.scrolled) .nav-link:hover {
+            color: #ffffff;
+        }
+
+        .navbar:not(.scrolled) .dropdown-toggle {
+            color: #ffffff;
+        }
+
+        .navbar:not(.scrolled) .dropdown-menu {
+            background-color: #F9C75B;
+            border: none;
+        }
+
+
+        .navbar:not(.scrolled) .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar:not(.scrolled) .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+
+        .navbar.scrolled .dropdown-menu {
+            background-color: #ffffff;
+            border: 1px solid #eaeaea;
+        }
+
+        .navbar.scrolled .dropdown-item {
+            color: #313131;
+        }
+
+        .navbar.scrolled .dropdown-item:hover {
+            background-color: #f2f2f2;
+            color: #313131;
+        }
+
+        footer {
             background-color: #F9C75B;
         }
+
         footer a {
             text-decoration: none;
         }
-        footer h5{
+
+        footer h5 {
             font-weight: 700;
         }
-        footer ul li a{
+
+        footer ul li a {
             font-size: 15px;
         }
     </style>
@@ -76,11 +137,11 @@
                             aria-expanded="false">
                             Layanan
                         </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Layanan 1</a></li>
-                        <li><a class="dropdown-item" href="#">Layanan 2</a></li>
-                        <li>
-                    </ul>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Layanan 1</a></li>
+                            <li><a class="dropdown-item" href="#">Layanan 2</a></li>
+                            <li>
+                        </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Fitur</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
@@ -89,19 +150,20 @@
                             aria-expanded="false">
                             Solusi Bisnis
                         </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Bisnis Retail</a></li>
-                        <li><a class="dropdown-item" href="#">Bisnis Jasa</a></li>
-                        <li><a class="dropdown-item" href="#">Bisnis Keuangan</a></li>
-                        <li><a class="dropdown-item" href="#">Bisnis Beauty</a></li>
-                    </ul>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bisnis Retail</a></li>
+                            <li><a class="dropdown-item" href="#">Bisnis Jasa</a></li>
+                            <li><a class="dropdown-item" href="#">Bisnis Keuangan</a></li>
+                            <li><a class="dropdown-item" href="#">Bisnis Beauty</a></li>
+                        </ul>
                     <li class="nav-item"><a class="nav-link" href="#">Harga</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
                 </ul>
-            </li>
+                </li>
                 <!-- Login (masuk ke responsif juga) -->
                 <div class=" text-lg-end">
-                    <a href="#" class="btn btn-warning text-white px-4 ms-lg-3 w-lg-auto fw-semibold rounded-pill">Login</a>
+                    <a href="#"
+                        class="btn btn-warning text-white px-4 ms-lg-3 w-lg-auto fw-semibold rounded-pill">Login</a>
                 </div>
 
             </div>
@@ -116,7 +178,7 @@
             <div class="row gy-4">
 
                 <div class="col-12 col-md-4">
-                    <img src="{{asset('image/saktipos.png')}}" alt="" width="150" class="mb-2">
+                    <img src="{{ asset('image/saktipos.png') }}" alt="" width="150" class="mb-2">
                     <p>Tegal Besar Permai 1 Blok AB-9, Kaliwates Jember, Jawa Timur, Indonesia Phone/WA : 081230033880
                         Email : mascitra.com@gmail.com</p>
                 </div>
@@ -166,6 +228,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            const navbar = document.querySelector(".navbar");
+
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -31,7 +31,7 @@
 
         .btn-warning {
             border-radius: 20px;
-
+            background-color: #F9C75B;
         }
 
         .other-articles h2 {
@@ -96,7 +96,7 @@
                     <div class="card">
                         <img src="{{ asset('image/detail.png') }}" class="card-img-top img-cover" alt="...">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
+                            <h5 class="card-title mb-5">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
                                 <a href="#" class="btn btn-warning text-white">Baca Berita</a>
                             </div>
@@ -108,7 +108,7 @@
                     <div class="card">
                         <img src="{{ asset('image/detail.png') }}" class="card-img-top img-cover" alt="...">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
+                            <h5 class="card-title mb-5">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
                                 <a href="#" class="btn btn-warning text-white">Baca Berita</a>
                             </div>
@@ -120,7 +120,7 @@
                     <div class="card">
                         <img src="{{ asset('image/detail.png') }}" class="card-img-top img-cover" alt="...">
                         <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
+                            <h5 class="card-title mb-5">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
                                 <a href="#" class="btn btn-warning text-white">Baca Berita</a>
                             </div>

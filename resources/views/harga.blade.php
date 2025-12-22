@@ -8,21 +8,20 @@
             overflow: hidden;
         }
 
-        /* FOTO FULL, TIDAK KE-CUT */
+ 
         .hero-bg {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        /* OVERLAY */
+
         .hero-overlay {
             position: absolute;
             inset: 0;
             background: rgba(0, 0, 0, 0.55);
         }
 
-        /* WRAPPER KONTEN */
         .hero-wrapper {
             position: absolute;
             top: 50%;
@@ -31,7 +30,6 @@
             right: 0;
         }
 
-        /* KONTEN */
         .hero-content {
             color: #ffffff;
             max-width: 520px;
@@ -51,9 +49,9 @@
             margin-bottom: 24px;
         }
 
-        /* BUTTON */
+
         .btn-hero {
-            background-color: #f6a800;
+            background-color: #F9C75B;
             color: #ffffff;
             border-radius: 50px;
             padding: 12px 28px;
@@ -78,16 +76,6 @@
 
         .price .card {
             border-radius: 16px;
-        }
-
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 26px;
-            }
-
-            .price {
-                padding-top: 70px;
-            }
         }
 
         .feature-section {
@@ -140,10 +128,19 @@
             text-align: center;
         }
 
-        /* ===== ICON ===== */
         .feature-table tbody td:not(:first-child) {
             font-size: 18px;
             font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 26px;
+            }
+
+            .price {
+                padding-top: 70px;
+            }
         }
     </style>
 

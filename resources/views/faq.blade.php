@@ -3,7 +3,7 @@
     <br><br><br>
     <style>
         .hero-section {
-            padding: 50px 0;
+            padding: 40px 0;
             position: relative;
             background: #F9C75B;
 
@@ -56,13 +56,38 @@
             color: #FFAE00;
             background-color: #ffffff;
         }
+
+        @media (max-width: 991px) {
+
+            .hero-laptop {
+                margin-left: 0;
+                width: 80%;
+            }
+
+            .hero-right img {
+                width: 100%;
+            }
+
+            .hero-section {
+                padding: 30px 0;
+                text-align: start;
+            }
+
+            .contact-text {
+                font-size: 24px;
+            }
+
+            .card {
+                margin-top: 1.5rem;
+            }
+        }
     </style>
     <section class="hero-section d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-center align-items-center">
 
                 <!-- KIRI -->
-                <div class="col-lg-6 text-start mb-5 mb-lg-0">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0 pt-5">
                     <h1 class="fw-bold text-white">
                         Pertanyaan Seputar <br>
                         SAKTI POS
@@ -77,7 +102,7 @@
 
                 <!-- KANAN -->
                 <div class="col-lg-6 position-relative hero-right">
-                    <img src="{{ asset('image/faqbg.png') }}" class="hero-laptop" alt="">
+                    <img src="{{ asset('image/faqbg.png') }}" class="img-fluid hero-laptop" alt="">
                 </div>
 
             </div>
@@ -199,26 +224,26 @@
 
                 <!-- Card Telepon -->
                 <div class="col-12 col-md-6 col-lg-5">
-                 <div class="card p-4 shadow-sm border-2">
-                    <div class="d-flex align-items-center justify-content-center m-auto gap-3">
-                        <div class="rounded-circle d-flex justify-content-center align-items-center">
-                            <i class="bi bi-telephone-fill text-white fs-3"></i>
+                    <div class="card p-4 shadow-sm border-2">
+                        <div class="d-flex align-items-center justify-content-center m-auto gap-3">
+                            <div class="rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="bi bi-telephone-fill text-white fs-3"></i>
+                            </div>
+                            <span class="fw-bold fs-4">123-456-789</span>
                         </div>
-                        <span class="fw-bold fs-4">123-456-789</span>
                     </div>
                 </div>
-            </div>
                 <!-- Card Email -->
-            <div class="col-12 col-md-6 col-lg-5">
-                <div class="card p-4 shadow-sm border-2">
-                    <div class="d-flex align-items-center justify-content-center m-auto gap-3">
-                        <div class="rounded-circle d-flex justify-content-center align-items-center">
-                            <i class="bi bi-envelope text-white fs-3"></i>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="card p-4 shadow-sm border-2">
+                        <div class="d-flex align-items-center justify-content-center m-auto gap-3">
+                            <div class="rounded-circle d-flex justify-content-center align-items-center">
+                                <i class="bi bi-envelope text-white fs-3"></i>
+                            </div>
+                            <span class="fw-bold fs-4">123-456-789</span>
                         </div>
-                        <span class="fw-bold fs-4">123-456-789</span>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 @endsection
