@@ -18,12 +18,9 @@ Route::get('/', function () {
 });
 Route::get('/login', function () {
     return view('auth.login');
-<<<<<<< HEAD
+
 })->name('login');
 
 Route::get('/register', function () {
     return view('auth.register');
 })->name('register');
-=======
-})->name('login');
->>>>>>> 6d5cf882c8be5649b66cbe362068c4b3d5bdfb17
