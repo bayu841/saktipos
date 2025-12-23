@@ -31,70 +31,15 @@
         }
 
         .navbar {
-            background-color: transparen !important;
+            background-color: #ffffff;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             position: fixed;
             width: 100%;
             z-index: 9999;
-        }
-
-        .navbar.scrolled {
-            background-color: #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .navbar ul li a {
             font-weight: 500;
-            color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
 
-        .navbar.scrolled ul li a {
-            font-weight: 500;
-            color: #313131;
-        }
-
-        .navbar .nav-link {
-            color: #ffffff;
-            font-weight: 500;
-        }
-
-        .navbar:not(.scrolled) .nav-link:hover {
-            color: #ffffff;
-        }
-
-        .navbar:not(.scrolled) .dropdown-toggle {
-            color: #ffffff;
-        }
-
-        .navbar:not(.scrolled) .dropdown-menu {
-            background-color: #F9C75B;
-            border: none;
-        }
-
-
-        .navbar:not(.scrolled) .dropdown-item {
-            color: #ffffff;
-        }
-
-        .navbar:not(.scrolled) .dropdown-item:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            color: #ffffff;
-        }
-
-
-        .navbar.scrolled .dropdown-menu {
-            background-color: #ffffff;
-            border: 1px solid #eaeaea;
-        }
-
-        .navbar.scrolled .dropdown-item {
-            color: #313131;
-        }
-
-        .navbar.scrolled .dropdown-item:hover {
-            background-color: #f2f2f2;
-            color: #313131;
-        }
 
         footer {
             background-color: #F9C75B;
