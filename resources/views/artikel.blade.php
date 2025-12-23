@@ -21,7 +21,7 @@
         body{
             font-family: 'Poppins', sans-serif;
         }
-           .navbar {
+        .navbar {
             background-color: transparen !important;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             position: fixed;
