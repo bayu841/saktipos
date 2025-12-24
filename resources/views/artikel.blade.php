@@ -67,7 +67,7 @@
         }
 
         .navbar:not(.scrolled) .dropdown-menu {
-            background-color: #F9C75B;
+            background-color: #D5B043;
             border: none;
         }
 
@@ -119,14 +119,39 @@
 
         .btn-hero {
             border-radius: 40px;
-            background-color: #F5B529;
+            background-color: #D5B043;
             height: 50%;
             width: 30%;
         }
 
         .btn-hero:hover {
-            background-color: #ffb109;
+            background-color: #D5B043;
         }
+        .btn-saktipos {
+    background-color: #cda93f;
+    border-color: #cda93f;
+    color: #ffffff;
+        }
+
+        .btn-saktipos:hover {
+    background-color: #b89633; 
+    border-color: #b89633;
+    color: #ffffff;
+        }
+/* Pagination angka */
+.btn-page {
+    background-color: #E29E0B;
+    border-color: #E29E0B;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-page:hover {
+    background-color: #cc8d09;
+    border-color: #cc8d09;
+    color: #ffffff;
+}
+
 
         .search-wrapper {
             position: relative;
@@ -187,7 +212,7 @@
         }
 
         footer {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
         }
 
         footer a {
@@ -284,9 +309,9 @@
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                    <a href="#" class="btn btn-warning text-white px-4 ms-lg-3 fw-semibold rounded-pill">
-                        Login
-                    </a>
+                    <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill">
+    Login
+</a>
                 </div>
 
             </div>
@@ -339,7 +364,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -350,7 +375,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -361,7 +386,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -372,7 +397,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                                                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -383,7 +408,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -394,7 +419,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -405,7 +430,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -416,7 +441,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -427,7 +452,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
-                                <a href="#" class="btn btn-warning text-white">Baca Berita</a>
+                            <a href="#" class="btn btn-saktipos">Baca Berita</a>
                             </div>
                         </div>
                     </div>
@@ -440,11 +465,12 @@
 
         <!-- Pagination -->
         <div class="d-flex justify-content-center gap-2 mt-5 flex-wrap">
-            <a href="#" class="btn btn-warning text-white fw-bold">Sebelumnya</a>
-            <a href="#" class="btn btn-warning text-white fw-bold">1</a>
-            <a href="#" class="btn btn-warning text-white fw-bold">2</a>
-            <a href="#" class="btn btn-warning text-white fw-bold">3</a>
-            <a href="#" class="btn btn-warning text-white fw-bold">Selanjutnya</a>
+            <a href="#" class="btn btn-saktipos fw-bold">Sebelumnya</a>
+            <a href="#" class="btn btn-page">1</a>
+            <a href="#" class="btn btn-page">2</a>
+            <a href="#" class="btn btn-page">3</a>
+            <a href="#" class="btn btn-saktipos fw-bold">Sebelumnya</a>
+
         </div>
         </div>
     </section>
