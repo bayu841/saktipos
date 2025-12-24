@@ -10,6 +10,7 @@
 
         .card img {
             width: 100%;
+            object-fit: cover;
             border-radius: 20px 20px 0px 0px;
         }
 
@@ -34,10 +35,6 @@
             background-color: #F9C75B;
         }
 
-        .other-articles h2 {
-            text-decoration: underline;
-            text-decoration-color: #F9C75B;
-        }
     </style>
     <div class="title mt-4 p-5">
         <h2 class="text-warning fw-bold mb-4">Detail Berita</h2>

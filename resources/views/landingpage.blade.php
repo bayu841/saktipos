@@ -26,7 +26,6 @@
         }
 
         .navbar {
-            background-color: transparen !important;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             position: fixed;
             width: 100%;
@@ -55,6 +54,11 @@
 
         .navbar:not(.scrolled) .nav-link:hover {
             color: #ffffff;
+        }
+
+        .navbar:not(.scrolled) .navbar-collape {
+            color: #1D1D1D;
+            background-color: #ffffff;
         }
 
         .navbar:not(.scrolled) .dropdown-toggle {
@@ -89,10 +93,70 @@
             color: #313131;
         }
 
+
+        .btn-login {
+            color: #fff;
+            border-color: #fff;
+        }
+
+
+        .navbar.scrolled .btn-login {
+            background-color: #ffffff;
+            color: #1D1D1D;
+            border-color: #1D1D1D;
+        }
+
+
+        .navbar.scrolled .btn-login:hover {
+            background-color: #e0a822;
+            border-color: #e0a822;
+            color: #ffffff;
+        }
+
         .hero-section {
             padding: 100px 0;
             position: relative;
             background: #ffffff;
+
+        }
+
+        .navbar-collapse.show {
+            background-color: #D5B043;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-collapse .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .navbar-collapse .nav-link:hover {
+            color: #f2f2f2;
+        }
+
+        .navbar-collapse .dropdown-menu {
+            background-color: transparent;
+            border: none;
+        }
+
+        .navbar-collapse .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-collapse .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        .navbar.scrolled .navbar-collapse.show {
+            background-color: #ffffff;
+        }
+
+        .navbar.scrolled .navbar-collapse .nav-link,
+        .navbar.scrolled .navbar-collapse .dropdown-item {
+            color: #313131;
         }
 
         .brand-highlight {
@@ -101,14 +165,6 @@
             font-weight: 800;
             display: inline-block;
             color: rgb(255, 255, 255);
-        }
-
-        .hero-laptop {
-            width: 100%;
-            max-width: none;
-            position: relative;
-            z-index: 2;
-            margin-left: 0;
         }
 
         .hero-bg-1 {
@@ -156,8 +212,8 @@
         }
 
         .text-saktipos {
-    color: #cda93f;
-}
+            color: #cda93f;
+        }
 
         .instagram-video-frame {
             cursor: pointer;
@@ -231,16 +287,21 @@
 
         .text-about {
             max-width: 550px;
+            text-align: start;
         }
 
         .card {
-            width: 28rem;
+            width: 450vh;
             height: 24rem;
             border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
+
         .border-saktipos {
-    border-color: #cda93f !important;
-}
+            border-color: #cda93f !important;
+        }
 
 
         .bussines {
@@ -256,8 +317,8 @@
 
         .small-mockup {
             width: 260px;
-            bottom: -40px;
-            right: -20px;
+            bottom: -48px;
+            right: 1px;
         }
 
         .small-mockup-2 {
@@ -267,16 +328,17 @@
         }
 
         .btn-gold {
-    background-color: #D5B043;
-    border-color: #D5B043;
-    color: #ffffff;
-    }
+            background-color: #D5B043;
+            border-color: #D5B043;
+            color: #ffffff;
+        }
 
         .btn-gold:hover {
-    background-color: #c4a13d; 
-    border-color: #c4a13d;
-    color: #ffffff;
-    }
+            background-color: #c4a13d;
+            border-color: #c4a13d;
+            color: #ffffff;
+        }
+
         .tab-btn {
             background: transparent;
             border: none;
@@ -290,7 +352,7 @@
         }
 
         .tab-btn.active {
-            background:#cda93f;
+            background: #cda93f;
             color: white;
         }
 
@@ -349,7 +411,7 @@
 
         .business-tabs {
             scrollbar-width: none;
-            /* Firefox */
+
         }
 
         .tab-btn.active {
@@ -370,7 +432,7 @@
 
             animation: fadeUp 0.45s ease forwards;
         }
-        
+
 
         footer {
             background-color: #cda93f;
@@ -397,29 +459,6 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
-            }
-        }
-
-
-        /* Responsif */
-        @media (max-width: 991px) {
-            .hero-right {
-                margin-top: 50px;
-            }
-
-            .hero-bg-shape {
-                width: 400px;
-                height: 400px;
-                right: -30px;
-            }
-
-            .hero-laptop {
-                margin-left: 0;
-            }
-
-            .hero-phone {
-                width: 140px;
-                bottom: -10px;
             }
         }
     </style>
@@ -489,9 +528,9 @@
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                 <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill">
-    Login
-</a>
+                    <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
+                        Login
+                    </a>
 
 
 
@@ -529,7 +568,7 @@
                                 </p>
 
                                 <div class="d-flex gap-3 mt-4">
-                                   <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill"> Coba Sekarang</a>
+                                    <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill"> Coba Sekarang</a>
 
 
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
@@ -559,9 +598,9 @@
                                     Lihat penjualan harian, bulanan, dan tahunan dengan mudah.
                                 </p>
                                 <div class="d-flex gap-3 mt-4">
-                                  <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
-    Coba Sekarang
-</a>
+                                    <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
+                                        Coba Sekarang
+                                    </a>
 
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
@@ -583,26 +622,26 @@
                             <div class="col-lg-6 mb-5 mb-lg-0">
                                 <h1 class="fw-bold">
                                     <span class="brand-highlight text-white">Satu Website</span>
-                                    <span class="text-white">Responsif di Semua Perangkat</span>
+                                    <span class="brand-highlight text-white">Responsif di Semua Perangkat</span>
                                 </h1>
 
                                 <p class="mt-3 text-white">
                                     Tampilan otomatis menyesuaikan di desktop, tablet, dan smartphone
                                     untuk pengalaman penggunaan yang nyaman kapan saja.
                                 </p>
-                                
+
 
                                 <div class="d-flex gap-3 mt-4">
                                     <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
-    Coba Sekarang
-</a>
+                                        Coba Sekarang
+                                    </a>
 
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </section>
             </div>
         </div>
@@ -621,7 +660,7 @@
     <section class="about py-5 d-flex align-items-center justify-content-center mb-5 mt-5">
         <div class="container text-center text-md-start">
 
-           <h2 class="fw-bold mb-4"> Mengapa? <span class="fw-bold text-saktipos">SAKTIPOS</span></h2>
+            <h2 class="fw-bold mb-4"> Mengapa? <span class="fw-bold text-saktipos">SAKTIPOS</span></h2>
 
 
             <div class="row align-items-center justify-content-center g-4">
@@ -660,8 +699,8 @@
                 <!-- Kolom Teks -->
                 <div class="col-md-8 d-flex flex-column justify-content-center mb-5">
                     <div class="mx-md-auto text-about">
-                       <h4 class="fw-bold"> Solusi kasir modern yang cepat, akurat, <br>
-                        dan <span class="fw-bold text-saktipos">mudah digunakan</span></h4>
+                        <h4 class="fw-bold"> Solusi kasir modern yang cepat, akurat, <br>
+                            dan <span class="fw-bold text-saktipos">mudah digunakan</span></h4>
 
 
                         <p>
@@ -742,19 +781,19 @@
     <br><br><br>
     <section class="price mb-5">
         <h2 class="fw-bold mb-4 text-center">
-    Harga <span class="fw-bold text-saktipos">SAKTIPOS</span>
-</h2>
+            Harga <span class="fw-bold text-saktipos">SAKTIPOS</span>
+        </h2>
 
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center g-3">
 
                 <!-- Card 1 -->
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                <div class="card border-3 border-saktipos">
+                    <div class="card border-3 border-saktipos">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Bulanan</h3>
-                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold">100k</h4>
+                            <h3 class="card-title fw-bold pb-2 text-center">Bulanan</h3>
+                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold text-center">100k</h4>
                             <p class="card-text">✔ Lebih hemat untuk pembelian dalam jumlah banyak</p>
                             <p class="card-text">✔ Pengaturan otomatis berdasarkan kuantitas</p>
                             <p class="card-text">✔ Meningkatkan volume penjualan</p>
@@ -767,8 +806,8 @@
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
                     <div class="card border-3 border-saktipos">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Tahunan</h3>
-                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold">500k</h4>
+                            <h3 class="card-title fw-bold pb-2 text-center">Tahunan</h3>
+                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold text-center">500k</h4>
 
                             <p class="card-text">✔ Harga spesial untuk pelanggan terdaftar</p>
                             <p class="card-text">✔ Meningkatkan repeat order</p>
@@ -778,12 +817,12 @@
                     </div>
                 </div>
 
-                
-            <!-- Button -->
-            <div class="d-flex justify-content-center align-items-center mt-3">
-               <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+
+                <!-- Button -->
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+                </div>
             </div>
-        </div>
     </section>
     <br><br>
     <section class="py-5">
@@ -794,7 +833,8 @@
 
             <!-- ITEM 1 -->
             <div class="row align-items-center mb-5">
-                <div class="col-lg-6 position-relative mb-4 mb-lg-0">
+                <!-- Gambar utama -->
+                <div class="col-12 col-md-6 position-relative mb-4 mb-md-0">
                     <img src="{{ asset('image/layanan1.png') }}" class="img-fluid rounded-4 shadow-sm"
                         alt="">
 
@@ -803,7 +843,8 @@
                         alt="">
                 </div>
 
-                <div class="col-lg-6"><br>
+                <!-- Teks -->
+                <div class="col-12 col-md-6 mt-4">
                     <h5 class="fw-bold text-saktipos">Kelola Produk Dan Stok Barang</h5>
                     <p class="text-secondary mt-2">
                         Kelola semua produk Anda dengan rapi dan akurat. Tambah, ubah, atau hapus barang
@@ -813,6 +854,7 @@
                     </p>
                 </div>
             </div>
+
 
             <!-- ITEM 2 (ZIGZAG) -->
             <div class="row align-items-center mb-5 flex-lg-row-reverse">
@@ -1115,7 +1157,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                                   <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+                    <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
 
                 </div>
             </div>
@@ -1180,9 +1222,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
 
-            /* =========================
-               NAVBAR SCROLL EFFECT
-            ========================= */
+
             const navbar = document.querySelector(".navbar");
 
             window.addEventListener("scroll", function() {
@@ -1194,9 +1234,6 @@
             });
 
 
-            /* =========================
-               TAB BUTTON FUNCTION
-            ========================= */
             const tabs = document.querySelectorAll('.tab-btn');
             const contents = document.querySelectorAll('.tab-content-item');
 

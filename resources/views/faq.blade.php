@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <style>
-        body{
+        body {
             font-family: 'Poppins', sans-serif;
         }
+
         .navbar {
-            background-color: transparen !important;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             position: fixed;
             width: 100%;
@@ -53,12 +55,17 @@
             color: #ffffff;
         }
 
+        .navbar:not(.scrolled) .navbar-collape {
+            color: #1D1D1D;
+            background-color: #ffffff;
+        }
+
         .navbar:not(.scrolled) .dropdown-toggle {
             color: #ffffff;
         }
 
         .navbar:not(.scrolled) .dropdown-menu {
-            background-color: #F9C75B;
+            background-color: #D5B043;
             border: none;
         }
 
@@ -85,6 +92,72 @@
             color: #313131;
         }
 
+
+        .btn-login {
+            color: #fff;
+            border-color: #fff;
+        }
+
+
+        .navbar.scrolled .btn-login {
+            background-color: #ffffff;
+            color: #1D1D1D;
+            border-color: #1D1D1D;
+        }
+
+
+        .navbar.scrolled .btn-login:hover {
+            background-color: #e0a822;
+            border-color: #e0a822;
+            color: #ffffff;
+        }
+
+        .navbar-collapse.show {
+            background-color: #D5B043;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-collapse .nav-link {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .navbar-collapse .nav-link:hover {
+            color: #f2f2f2;
+        }
+
+        .navbar-collapse .dropdown-menu {
+            background-color: transparent;
+            border: none;
+        }
+
+        .navbar-collapse .dropdown-item {
+            color: #ffffff;
+        }
+
+        .navbar-collapse .dropdown-item:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+        }
+
+        .navbar.scrolled .navbar-collapse.show {
+            background-color: #ffffff;
+        }
+
+        .navbar.scrolled .navbar-collapse .nav-link,
+        .navbar.scrolled .navbar-collapse .dropdown-item {
+            color: #313131;
+        }
+
+         .hero-section {
+            padding: 100px 0;
+            position: relative;
+            background: #ffffff;
+
+        }
+
         .hero-faq {
             padding: 100px 0;
             position: relative;
@@ -100,15 +173,6 @@
             padding: 40px 0;
             position: relative;
         }
-
-        .hero-laptop {
-            width: 100%;
-            max-width: none;
-            position: relative;
-            z-index: 2;
-            margin-left: 80px;
-        }
-
 
         .another-question h2 {
             margin-bottom: 0;
@@ -161,6 +225,7 @@
         footer ul li a {
             font-size: 15px;
         }
+
         @media (max-width: 991px) {
 
             .hero-laptop {
@@ -186,7 +251,7 @@
             }
         }
     </style>
-     <nav class="navbar navbar-expand-lg py-3">
+    <nav class="navbar navbar-expand-lg py-3">
         <div class="container px-4">
 
             <!-- Brand -->
@@ -310,7 +375,8 @@
                     </h2>
                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Cukup daftar, login, tambahkan produk, kemudian langsung bisa melakukan transaksi dan memantau
+                            Cukup daftar, login, tambahkan produk, kemudian langsung bisa melakukan transaksi dan
+                            memantau
                             laporan secara otomatis
                         </div>
                     </div>
@@ -475,7 +541,7 @@
             </div>
         </div>
     </footer>
-      <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
 
             /* =========================
@@ -514,4 +580,5 @@
         });
     </script>
 </body>
+
 </html>
