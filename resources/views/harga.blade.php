@@ -5,16 +5,22 @@
         .hero-section {
             position: relative;
             width: 100%;
+            height: 100vh;
             overflow: hidden;
         }
 
- 
+
         .hero-bg {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: cover;
         }
 
+        .hero-section img {
+            width: 100%;
+            height: 100%;
+        }
 
         .hero-overlay {
             position: absolute;

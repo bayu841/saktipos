@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog - SAKTIPOS</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
@@ -16,11 +17,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <style>
-        body{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: 'Poppins', sans-serif;
         }
+
         .navbar {
             background-color: transparen !important;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -119,11 +128,38 @@
             background-color: #ffb109;
         }
 
-        .article-title {
-            text-decoration: underline;
-            text-decoration-color: #F5B529;
-
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1120px;
+            margin: 10px auto;
         }
+
+        .search-input {
+            width: 100%;
+            padding: 14px 48px 14px 20px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: #f2f2f2;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .search-input::placeholder {
+            color: #999;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 18px;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
 
         .card {
             width: 100%;
@@ -132,8 +168,8 @@
             height: 100%;
         }
 
-        .card img{
-            height: 100%;
+        .card img {
+            height: 35vh;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
@@ -149,6 +185,7 @@
         .btn-container .btn {
             border-radius: 10px;
         }
+
         footer {
             background-color: #F9C75B;
         }
@@ -164,8 +201,24 @@
         footer ul li a {
             font-size: 15px;
         }
+
+        @media (max-width: 576px) {
+            .search-wrapper {
+                position: sticky;
+                top: 30px;
+                z-index: 100;
+                background: white;
+                padding: 10px 0;
+                width: 100%;
+            }
+
+            .search-input {
+                font-size: 14px;
+                padding: 12px 44px 12px 16px;
+            }
+        }
     </style>
-     <nav class="navbar navbar-expand-lg py-3">
+    <nav class="navbar navbar-expand-lg py-3">
         <div class="container px-4">
 
             <!-- Brand -->
@@ -269,12 +322,20 @@
     <section class="article-container p-5">
         <h2 class="article-title fw-bold mb-4">Artikel Terbaru</h2>
 
+        <div class="container-fluid justify-content-center align-items-center d-flex">
+            <div class="search-wrapper">
+                <input type="text" placeholder="Cari Artikel..." class="search-input">
+                <span class="search-icon">
+                    <i class="bi bi-search"></i>
+                </span>
+            </div>
+        </div>
         <div class="container my-4">
             <div class="row g-4">
 
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -285,7 +346,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -296,7 +357,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -307,7 +368,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -318,7 +379,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -329,7 +390,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -340,7 +401,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -351,7 +412,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -362,7 +423,7 @@
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="card">
-                        <img src="{{asset('image/detail.png')}}" class="card-img-top" alt="...">
+                        <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Membangun branding yang kuat dan mengensankan untuk UKM</h5>
                             <div class="text-end">
@@ -387,7 +448,7 @@
         </div>
         </div>
     </section>
-      <footer class="text-white py-5">
+    <footer class="text-white py-5">
         <div class="container">
             <div class="row gy-4">
 
@@ -442,7 +503,7 @@
             </div>
         </div>
     </footer>
-      <script>
+    <script>
         window.addEventListener("scroll", function() {
             const navbar = document.querySelector(".navbar");
 
@@ -454,4 +515,5 @@
         });
     </script>
 </body>
+
 </html>
