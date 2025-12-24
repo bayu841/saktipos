@@ -62,7 +62,7 @@
         }
 
         .navbar:not(.scrolled) .dropdown-menu {
-            background-color: #F9C75B;
+            background-color: #D5B043;
             border: none;
         }
 
@@ -155,6 +155,10 @@
             border-radius: 40px;
         }
 
+        .text-saktipos {
+    color: #cda93f;
+}
+
         .instagram-video-frame {
             cursor: pointer;
             position: relative;
@@ -204,7 +208,7 @@
         }
 
         .superior-features {
-            background-color: #F9C75B;
+            background-color: #cda93f;
             height: 90%;
         }
 
@@ -234,11 +238,15 @@
             height: 24rem;
             border-radius: 20px;
         }
+        .border-saktipos {
+    border-color: #cda93f !important;
+}
+
 
         .bussines {
             height: 100%;
             width: 100%;
-            background-color: #F9C75B;
+            background-color: #cda93f;
             padding: 50px;
         }
 
@@ -258,14 +266,23 @@
             left: -30px;
         }
 
+        .btn-gold {
+    background-color: #D5B043;
+    border-color: #D5B043;
+    color: #ffffff;
+    }
 
-
+        .btn-gold:hover {
+    background-color: #c4a13d; 
+    border-color: #c4a13d;
+    color: #ffffff;
+    }
         .tab-btn {
             background: transparent;
             border: none;
             font-weight: 600;
             font-size: 17px;
-            color: #E29E0B;
+            color: #cda93f;
             padding: 10px 20px;
             border-radius: 40px;
             transition: .3s;
@@ -273,7 +290,7 @@
         }
 
         .tab-btn.active {
-            background: #FFAE00;
+            background:#cda93f;
             color: white;
         }
 
@@ -296,7 +313,7 @@
         }
 
         .accordion-button:not(.collapsed) {
-            color: #FFAE00;
+            color: #D5B043;
             background-color: #ffffff;
         }
 
@@ -336,7 +353,7 @@
         }
 
         .tab-btn.active {
-            background: #f5b529;
+            background: #cda93f;
             color: #fff;
 
         }
@@ -353,9 +370,10 @@
 
             animation: fadeUp 0.45s ease forwards;
         }
+        
 
         footer {
-            background-color: #F9C75B;
+            background-color: #cda93f;
         }
 
         footer a {
@@ -471,9 +489,12 @@
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                    <a href="#" class="btn btn-warning text-white px-4 ms-lg-3 fw-semibold rounded-pill">
-                        Login
-                    </a>
+                 <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill">
+    Login
+</a>
+
+
+
                 </div>
 
             </div>
@@ -508,9 +529,9 @@
                                 </p>
 
                                 <div class="d-flex gap-3 mt-4">
-                                    <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
-                                        Coba Sekarang
-                                    </a>
+                                   <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill"> Coba Sekarang</a>
+
+
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
@@ -538,9 +559,10 @@
                                     Lihat penjualan harian, bulanan, dan tahunan dengan mudah.
                                 </p>
                                 <div class="d-flex gap-3 mt-4">
-                                    <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
-                                        Coba Sekarang
-                                    </a>
+                                  <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
+    Coba Sekarang
+</a>
+
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
@@ -568,12 +590,16 @@
                                     Tampilan otomatis menyesuaikan di desktop, tablet, dan smartphone
                                     untuk pengalaman penggunaan yang nyaman kapan saja.
                                 </p>
+                                
 
                                 <div class="d-flex gap-3 mt-4">
-                                    <a class="btn btn-warning px-4 py-2 fw-semibold text-white rounded-pill px-4">
+                                    <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
+    Coba Sekarang
+</a>
+
+                                    <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -595,9 +621,8 @@
     <section class="about py-5 d-flex align-items-center justify-content-center mb-5 mt-5">
         <div class="container text-center text-md-start">
 
-            <h2 class="fw-bold mb-4">
-                Mengapa? <span class="fw-bold text-warning">SAKTIPOS</span>
-            </h2>
+           <h2 class="fw-bold mb-4"> Mengapa? <span class="fw-bold text-saktipos">SAKTIPOS</span></h2>
+
 
             <div class="row align-items-center justify-content-center g-4">
 
@@ -635,10 +660,9 @@
                 <!-- Kolom Teks -->
                 <div class="col-md-8 d-flex flex-column justify-content-center mb-5">
                     <div class="mx-md-auto text-about">
-                        <h4 class="fw-bold">
-                            Solusi kasir modern yang cepat, akurat, <br>
-                            dan <span class="text-warning fw-bold">mudah digunakan</span>
-                        </h4>
+                       <h4 class="fw-bold"> Solusi kasir modern yang cepat, akurat, <br>
+                        dan <span class="fw-bold text-saktipos">mudah digunakan</span></h4>
+
 
                         <p>
                             Sakti Pos adalah aplikasi pembukuan keuangan berbasis web yang mempermudah pencatatan
@@ -718,18 +742,19 @@
     <br><br><br>
     <section class="price mb-5">
         <h2 class="fw-bold mb-4 text-center">
-            Harga <span class="fw-bold text-warning">SAKTIPOS</span>
-        </h2>
+    Harga <span class="fw-bold text-saktipos">SAKTIPOS</span>
+</h2>
+
 
         <div class="container">
             <div class="row justify-content-center g-3">
 
                 <!-- Card 1 -->
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning">
+                <div class="card border-3 border-saktipos">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Grosir</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">100k</h4>
+                            <h3 class="card-title fw-bold pb-2">Bulanan</h3>
+                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold">100k</h4>
                             <p class="card-text">✔ Lebih hemat untuk pembelian dalam jumlah banyak</p>
                             <p class="card-text">✔ Pengaturan otomatis berdasarkan kuantitas</p>
                             <p class="card-text">✔ Meningkatkan volume penjualan</p>
@@ -740,10 +765,11 @@
 
                 <!-- Card 2 -->
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning">
+                    <div class="card border-3 border-saktipos">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold text-warning pb-2">Member</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">200k</h4>
+                            <h3 class="card-title fw-bold pb-2">Tahunan</h3>
+                            <h4 class="card-subtitle mb-2 text-saktipos fw-bold">500k</h4>
+
                             <p class="card-text">✔ Harga spesial untuk pelanggan terdaftar</p>
                             <p class="card-text">✔ Meningkatkan repeat order</p>
                             <p class="card-text">✔ Segmentasi pelanggan otomatis</p>
@@ -752,27 +778,10 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Outlet</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">300k</h4>
-                            <p class="card-text">✔ Setiap cabang bisa punya harga berbeda</p>
-                            <p class="card-text">✔ Manajemen harga lebih rapi</p>
-                            <p class="card-text">✔ Mendukung bisnis multi-outlet</p>
-                            <p class="card-text">✔ Kontrol penuh dari pusat</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+                
             <!-- Button -->
             <div class="d-flex justify-content-center align-items-center mt-3">
-                <a href="" class="btn btn-warning text-white rounded-pill px-4">
-                    Selengkapnya
-                </a>
+               <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
             </div>
         </div>
     </section>
@@ -795,7 +804,7 @@
                 </div>
 
                 <div class="col-lg-6"><br>
-                    <h5 class="fw-bold text-warning">Kelola Produk Dan Stok Barang</h5>
+                    <h5 class="fw-bold text-saktipos">Kelola Produk Dan Stok Barang</h5>
                     <p class="text-secondary mt-2">
                         Kelola semua produk Anda dengan rapi dan akurat. Tambah, ubah, atau hapus barang
                         dalam beberapa klik. Stok diperbarui otomatis saat transaksi sehingga Anda selalu
@@ -817,7 +826,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <h5 class="fw-bold text-warning">Pencatatan Penjualan</h5>
+                    <h5 class="fw-bold text-saktipos">Pencatatan Penjualan</h5>
                     <p class="text-secondary mt-2">
                         Catat transaksi dengan cepat dan akurat. Proses penjualan dihitung otomatis dengan
                         berbagai metode pembayaran seperti tunai, transfer, dan QRIS. Semua transaksi tersimpan
@@ -1106,9 +1115,8 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                    <a href="" class="btn btn-warning text-white rounded-pill px-4">
-                        Selengkapnya
-                    </a>
+                                   <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+
                 </div>
             </div>
         </div>
