@@ -4,7 +4,13 @@
         .hero-section {
             position: relative;
             width: 100%;
+            height: 100vh;
             overflow: hidden;
+        }
+
+        .hero-section img {
+            object-fit: cover;
+            height: 100%;
         }
 
         .hero-bg {
@@ -13,14 +19,14 @@
             display: block;
         }
 
-        /* OVERLAY */
+
         .hero-overlay {
             position: absolute;
             inset: 0;
             background: rgba(0, 0, 0, 0.70);
         }
 
-        /* WRAPPER KONTEN */
+
         .hero-wrapper {
             position: absolute;
             top: 50%;
@@ -29,14 +35,12 @@
             right: 0;
         }
 
-        /* KONTEN */
+
         .hero-content {
             color: #ffffff;
             max-width: 520px;
             margin: 0 auto;
-            /* pusatkan blok */
             text-align: center;
-            /* pusatkan teks & button */
         }
 
 
@@ -61,7 +65,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            /* isi tab ke tengah */
             gap: 12px;
             padding: 10px;
             background: #ffffff;
@@ -69,7 +72,6 @@
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
             width: 100%;
             margin: 0 auto;
-            /* posisi tabs ke tengah halaman */
         }
 
 
@@ -85,6 +87,7 @@
             transition: all 0.3s ease;
             white-space: nowrap;
             width: 100%;
+            text-align: start;
         }
 
         .tab-btn:hover {
@@ -110,18 +113,6 @@
             display: block;
         }
 
-        @keyframes tabFade {
-            from {
-                opacity: 0;
-                transform: translateY(18px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         .tab-content-item h4 {
             font-size: 26px;
             font-weight: 700;
@@ -142,29 +133,6 @@
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
         }
 
-        @media (max-width: 991px) {
-            .category-tabs {
-                flex-wrap: wrap;
-                border-radius: 24px;
-            }
-
-            .tab-btn {
-                padding: 8px 20px;
-                font-size: 13px;
-            }
-
-            .tab-content-item h4 {
-                font-size: 22px;
-            }
-
-            .tab-content-item p {
-                font-size: 14px;
-            }
-
-            .retail-img {
-                max-width: 100%;
-            }
-        }
 
         .solusi-section {
             background-color: #F9C75B;
@@ -215,7 +183,6 @@
         .help-section {
             padding: 80px 0;
             margin-top: 100px;
-            /* JARAK DARI SECTION ATAS */
         }
 
         .help-title {
@@ -229,13 +196,14 @@
             justify-content: center;
             gap: 12px;
             padding: 26px 32px;
-            width: 50%;
+            width: 100%;
             border-radius: 40px;
             border: 2px solid #FFAE00;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             font-weight: bold;
             font-size: 20px;
             margin-bottom: 30px;
+
         }
 
         .contact-icon {
@@ -248,6 +216,42 @@
             align-items: center;
             justify-content: center;
             font-size: 18px;
+        }
+
+        @keyframes tabFade {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .category-tabs {
+                flex-wrap: wrap;
+                border-radius: 24px;
+            }
+
+            .tab-btn {
+                padding: 8px 20px;
+                font-size: 13px;
+            }
+
+            .tab-content-item h4 {
+                font-size: 22px;
+            }
+
+            .tab-content-item p {
+                font-size: 14px;
+            }
+
+            .retail-img {
+                max-width: 100%;
+            }
         }
     </style>
 
@@ -365,9 +369,6 @@
 
         </div>
     </section>
-
-
-
 
     <section class="solusi-section">
         <div class="container text-center">
