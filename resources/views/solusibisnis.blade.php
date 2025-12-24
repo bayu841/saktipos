@@ -234,9 +234,15 @@
                 flex-wrap: wrap;
                 border-radius: 24px;
             }
+
             .contact-box {
                 width: 80%;
-            }   
+            }
+
+            .tab-btn {
+                text-align: start;
+            }
+
             .tab-btn {
                 padding: 8px 20px;
                 font-size: 13px;
