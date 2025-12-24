@@ -169,7 +169,7 @@
         }
 
         .card img {
-            height: 100%;
+            height: 35vh;
             object-fit: cover;
             border-radius: 10px 10px 0 0;
         }
