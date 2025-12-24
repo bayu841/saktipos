@@ -632,14 +632,10 @@
 
 
                                 <div class="d-flex gap-3 mt-4">
-<<<<<<< Updated upstream
                                     <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
                                         Coba Sekarang
                                     </a>
-=======
-                                    <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill"> Coba Sekarang</a>
->>>>>>> Stashed changes
-
+                                    
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>

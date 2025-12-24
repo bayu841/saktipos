@@ -71,6 +71,15 @@
             color: #ffffff;
         }
 
+         .card {
+            width: 450vh;
+            height: 24rem;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
         .price {
             padding-top: 100px;
             padding-bottom: 80px;
@@ -79,23 +88,25 @@
         .price-title {
             margin-bottom: 56px;
         }
-           .text-detail {
-    color: #cda93f;
-}
+
+        .text-detail {
+            color: #cda93f;
+        }
 
         .price .card {
             border-radius: 16px;
         }
+
         .border-saktipos {
-    border-color: #cda93f !important;
-}
+            border-color: #cda93f !important;
+        }
 
 
         .feature-section {
             padding: 80px 0;
         }
 
-        
+
 
         .feature-table-wrapper {
             border: 2px solid #CDA93F;
@@ -151,7 +162,6 @@
                 padding-top: 70px;
             }
         }
-    
     </style>
 
     <section class="hero-section">
@@ -185,10 +195,10 @@
 
 
     <section class="price">
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="price-title text-center">
-                        <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>
+                <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>
 
             </div>
 
@@ -222,7 +232,7 @@
                     </div>
                 </div>
 
-                
+
 
             </div>
         </div>
