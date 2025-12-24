@@ -57,7 +57,7 @@
 
 
         .btn-hero {
-            background-color: #F9C75B;
+            background-color: #D5B043;
             color: #ffffff;
             border-radius: 50px;
             padding: 12px 28px;
@@ -79,23 +79,26 @@
         .price-title {
             margin-bottom: 56px;
         }
+           .text-detail {
+    color: #cda93f;
+}
 
         .price .card {
             border-radius: 16px;
         }
+        .border-saktipos {
+    border-color: #cda93f !important;
+}
+
 
         .feature-section {
             padding: 80px 0;
         }
 
-        .feature-title {
-            color: #FFAE00;
-            font-weight: 700;
-            margin-bottom: 32px;
-        }
+        
 
         .feature-table-wrapper {
-            border: 2px solid #FFAE00;
+            border: 2px solid #CDA93F;
             border-radius: 12px;
             overflow: hidden;
             background: #ffffff;
@@ -109,12 +112,12 @@
         }
 
         .feature-table thead th {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
             color: #ffffff;
             font-weight: 700;
             text-align: center;
             padding: 14px 16px;
-            border-bottom: 3px solid #FFAE00;
+            border-bottom: 3px solid #CDA93F;
         }
 
         .feature-table tbody tr {
@@ -148,6 +151,7 @@
                 padding-top: 70px;
             }
         }
+    
     </style>
 
     <section class="hero-section">
@@ -184,19 +188,18 @@
         <div class="container">
 
             <div class="price-title text-center">
-                <h2 class="fw-bold">
-                    <span class="text-warning">Pilih Harga Sesuai dengan Kebutuhan</span>
-                </h2>
+                        <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>
+
             </div>
 
             <div class="row justify-content-center g-4">
 
                 <!-- Card 1 -->
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning w-100">
+                    <div class="card border-3 border-saktipos w-100">
                         <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Grosir</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">100k</h4>
+                            <h3 class="card-title fw-bold pb-2 text-center">Bulanan</h3>
+                            <h4 class="card-subtitle mb-2 text-detail fw-bold text-center">100k</h4>
                             <p class="card-text">✔ Lebih hemat untuk pembelian dalam jumlah banyak</p>
                             <p class="card-text">✔ Pengaturan otomatis berdasarkan kuantitas</p>
                             <p class="card-text">✔ Meningkatkan volume penjualan</p>
@@ -206,10 +209,11 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning w-100">
+                    <div class="card border-3 border-saktipos w-100">
+
                         <div class="card-body">
-                            <h3 class="card-title fw-bold text-warning pb-2">Member</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">200k</h4>
+                            <h3 class="card-title fw-bold pb-2 text-center">Tahunan</h3>
+                            <h4 class="card-subtitle mb-2 text-detail fw-bold text-center">200k</h4>
                             <p class="card-text">✔ Harga spesial untuk pelanggan terdaftar</p>
                             <p class="card-text">✔ Meningkatkan repeat order</p>
                             <p class="card-text">✔ Segmentasi pelanggan otomatis</p>
@@ -218,18 +222,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-                    <div class="card border-3 border-warning w-100">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold pb-2">Outlet</h3>
-                            <h4 class="card-subtitle mb-2 text-warning fw-bold">300k</h4>
-                            <p class="card-text">✔ Setiap cabang bisa punya harga berbeda</p>
-                            <p class="card-text">✔ Manajemen harga lebih rapi</p>
-                            <p class="card-text">✔ Mendukung bisnis multi-outlet</p>
-                            <p class="card-text">✔ Kontrol penuh dari pusat</p>
-                        </div>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
@@ -238,7 +231,7 @@
     <section class="feature-section">
         <div class="container">
 
-            <h3 class="feature-title">Fitur Yang Didapat</h3>
+            <h3 class="feature-title text-detail fw-bold mb-4">Fitur Yang Didapat</h3>
 
             <div class="feature-table-wrapper">
                 <table class="table feature-table mb-0">

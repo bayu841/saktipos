@@ -32,12 +32,16 @@
 
         .btn-warning {
             border-radius: 20px;
-            background-color: #F9C75B;
+            background-color: #CDA93F;
         }
+        .text-detail {
+    color: #cda93f;
+}
+
 
     </style>
     <div class="title mt-4 p-5">
-        <h2 class="text-warning fw-bold mb-4">Detail Berita</h2>
+        <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>
         <div class="card-container">
             <img src="{{ asset('image/detail.png') }}" class="card-img-top" alt="...">
             <div class="article-card p-4">

@@ -39,10 +39,23 @@
             font-weight: 500;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
+        .btn-outline-dark-custom {
+    background-color: transparent;
+    border: 1.5px solid #000000;
+    color: #000000;
+    font-weight: 500;
+}
+
+.btn-outline-dark-custom:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
 
 
         footer {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
         }
 
         footer a {
@@ -107,8 +120,10 @@
                 </li>
                 <!-- Login (masuk ke responsif juga) -->
                 <div class=" text-lg-end">
-                    <a href="#"
-                        class="btn btn-warning text-white px-4 ms-lg-3 w-lg-auto fw-semibold rounded-pill">Login</a>
+                    <a href="#" class="btn btn-outline-dark-custom px-4 ms-lg-3 fw-semibold rounded-pill">
+    Login
+</a>
+
                 </div>
 
             </div>
