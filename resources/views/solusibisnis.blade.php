@@ -87,7 +87,6 @@
             transition: all 0.3s ease;
             white-space: nowrap;
             width: 100%;
-            text-align: start;
         }
 
         .tab-btn:hover {
@@ -196,7 +195,7 @@
             justify-content: center;
             gap: 12px;
             padding: 26px 32px;
-            width: 100%;
+            width: 50%;
             border-radius: 40px;
             border: 2px solid #FFAE00;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -235,7 +234,9 @@
                 flex-wrap: wrap;
                 border-radius: 24px;
             }
-
+            .contact-box {
+                width: 80%;
+            }   
             .tab-btn {
                 padding: 8px 20px;
                 font-size: 13px;
