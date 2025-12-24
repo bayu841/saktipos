@@ -151,7 +151,7 @@
             color: #313131;
         }
 
-         .hero-section {
+        .hero-section {
             padding: 100px 0;
             position: relative;
             background: #ffffff;
@@ -167,6 +167,22 @@
             background-repeat: no-repeat;
             min-height: 100vh;
             height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .hero-faq h1 {
+            font-size: 2.5rem;
+            /* default untuk desktop */
+            line-height: 1.2;
+        }
+
+        .hero-faq p {
+            font-size: 1.1rem;
+            /* default untuk desktop */
+            margin-top: 1rem;
         }
 
         .hero-section {
@@ -226,16 +242,20 @@
             font-size: 15px;
         }
 
+
         @media (max-width: 991px) {
-
-            .hero-laptop {
-                margin-left: 0;
-                width: 80%;
+            .hero-faq {
+                padding: 80px 20px;
             }
 
-            .hero-right img {
-                width: 100%;
+            .hero-faq h1 {
+                font-size: 2.5rem;
             }
+
+            .hero-faq p {
+                font-size: 1.1rem;
+            }
+
 
             .hero-section {
                 padding: 30px 0;
@@ -248,6 +268,20 @@
 
             .card {
                 margin-top: 1.5rem;
+            }
+
+            @media (max-width: 576px) {
+                .hero-faq {
+                    padding: 60px 15px;
+                }
+
+                .hero-faq h1 {
+                    font-size: 2rem;
+                }
+
+                .hero-faq p {
+                    font-size: 1rem;
+                }
             }
         }
     </style>
