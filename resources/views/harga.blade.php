@@ -198,7 +198,7 @@
         <div class="container-fluid">
 
             <div class="price-title text-center">
-                <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>
+                <h2 class="text-detail fw-bold mb-4">Harga Saktipos</h2>
 
             </div>
 
