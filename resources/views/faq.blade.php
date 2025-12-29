@@ -195,7 +195,7 @@
         }
 
         .card {
-            border-color: #F9C75B;
+            border-color: #CDA93F;
             width: 100%;
             border-radius: 30px;
             margin-top: 3rem;
@@ -203,7 +203,7 @@
         }
 
         .contact-text {
-            color: #F9C75B;
+            color: #CDA93F;
             font-size: 32px;
             justify-content: center;
             align-items: center;
@@ -222,12 +222,27 @@
         }
 
         .accordion-button:not(.collapsed) {
-            color: #FFAE00;
+            color: #CDA93F;
             background-color: #ffffff;
         }
+        .btn-saktipos {
+            background-color: #cda93f;
+            border-color: #cda93f;
+            color: #ffffff;
+        }
 
+        .btn-saktipos:hover {
+            background-color: #b89633;
+            border-color: #b89633;
+            color: #ffffff;
+        }
+        .icon-bg-saktipos {
+            background-color: #cda93f;
+            width: 55px;
+            height: 55px;
+        }
         footer {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
         }
 
         footer a {
@@ -351,7 +366,7 @@
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                    <a href="#" class="btn btn-warning text-white px-4 ms-lg-3 fw-semibold rounded-pill">
+                   <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
                         Login
                     </a>
                 </div>
@@ -478,10 +493,11 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                    <a href="" class="btn btn-warning text-white rounded-pill px-4">
-                        Selengkapnya
-                    </a>
-                </div>
+    <a href="" class="btn btn-saktipos rounded-pill px-4">
+        Selengkapnya
+    </a>
+</div>
+
             </div>
         </div>
     </section>
@@ -499,7 +515,7 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="card p-4 shadow-sm border-2">
                         <div class="d-flex align-items-center justify-content-center m-auto gap-3">
-                            <div class="rounded-circle d-flex justify-content-center align-items-center">
+                                <div class="rounded-circle d-flex justify-content-center align-items-center icon-bg-saktipos">
                                 <i class="bi bi-telephone-fill text-white fs-3"></i>
                             </div>
                             <span class="fw-bold fs-4">123-456-789</span>
@@ -510,7 +526,7 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="card p-4 shadow-sm border-2">
                         <div class="d-flex align-items-center justify-content-center m-auto gap-3">
-                            <div class="rounded-circle d-flex justify-content-center align-items-center">
+                         <div class="rounded-circle d-flex justify-content-center align-items-center icon-bg-saktipos">
                                 <i class="bi bi-envelope text-white fs-3"></i>
                             </div>
                             <span class="fw-bold fs-4">123-456-789</span>

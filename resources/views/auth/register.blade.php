@@ -27,7 +27,7 @@
         }
 
         .register-right {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
             padding: 48px 40px;
         }
 

@@ -9,7 +9,7 @@
         .login-card {
             border-radius: 24px;
             overflow: hidden;
-            border: 2px solid #E29E0B;
+            border: 2px solid #CDA93F ;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
             margin-top: 20px;
         }
@@ -28,7 +28,7 @@
         }
 
         .login-right {
-            background-color: #F9C75B;
+            background-color: #CDA93F;
             padding: 48px 40px;
         }
 
@@ -60,7 +60,7 @@
         }
 
         .login-btn:hover {
-            background-color: #e09500;
+            background-color: #FFAE00;
             color: #ffffff;
         }
 
