@@ -11,8 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
-
-    <script async src="//www.instagram.com/embed.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -113,7 +111,7 @@
         }
 
         .navbar-collapse.show {
-            background-color: #D5B043;
+            background-color: #d5b043;
             padding: 1rem;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -175,13 +173,11 @@
 
         .hero-faq h1 {
             font-size: 2.5rem;
-            /* default untuk desktop */
             line-height: 1.2;
         }
 
         .hero-faq p {
             font-size: 1.1rem;
-            /* default untuk desktop */
             margin-top: 1rem;
         }
 
@@ -320,7 +316,7 @@
                 <!-- Menu Tengah -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-lg-start">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a class="nav-link" href="{{route('landingpage')}}">Beranda</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -329,17 +325,17 @@
                             Layanan
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Layanan 1</a></li>
-                            <li><a class="dropdown-item" href="#">Layanan 2</a></li>
+                            <li><a class="dropdown-item" href="/#layanan1">Layanan 1</a></li>
+                            <li><a class="dropdown-item" href="/#layanan2">Layanan 2</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fitur</a>
+                        <a class="nav-link" href="/#fitur">Fitur</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{route('artikel')}}">Blog</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -356,17 +352,17 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Harga</a>
+                        <a class="nav-link" href="{{route('harga')}}">Harga</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="{{route('faq')}}">FAQ</a>
                     </li>
                 </ul>
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                   <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
+                   <a href="{{route('login')}}" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
                         Login
                     </a>
                 </div>
@@ -492,16 +488,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center mt-3">
-    <a href="" class="btn btn-saktipos rounded-pill px-4">
-        Selengkapnya
-    </a>
-</div>
-
+            </div>
             </div>
         </div>
     </section>
-
+    <br>
+    <br>
     <section class="another-question text-center py-4 mb-5">
         <h2 class="text-center mb-1 fw-bold">Ada Pertanyaan Lain ?</h2>
         <span class="fw-bold contact-text">Hubungi Kami</span>

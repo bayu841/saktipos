@@ -29,7 +29,7 @@
 
         .login-right {
             background-color: #CDA93F;
-            padding: 48px 40px;
+            padding: 68px 40px;
         }
 
         .login-title {

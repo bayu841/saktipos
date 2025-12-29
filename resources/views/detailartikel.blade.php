@@ -22,7 +22,8 @@
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
             border-radius: 20px
         }
-        .card-container img{
+
+        .card-container img {
             border-radius: 20px 20px 0 0;
         }
 
@@ -34,11 +35,10 @@
             border-radius: 20px;
             background-color: #CDA93F;
         }
+
         .text-detail {
-    color: #cda93f;
-}
-
-
+            color: #cda93f;
+        }
     </style>
     <div class="title mt-4 p-5">
         <h2 class="text-detail fw-bold mb-4">Detail Berita</h2>

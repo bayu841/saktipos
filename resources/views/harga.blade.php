@@ -30,7 +30,7 @@
 
         .hero-wrapper {
             position: absolute;
-            top: 50%;
+            top: 55%;
             transform: translateY(-50%);
             left: 0;
             right: 0;
@@ -81,8 +81,8 @@
         }
 
         .price {
-            padding-top: 100px;
-            padding-bottom: 80px;
+            padding-top: 5%;
+            padding-bottom: 5%;
         }
 
         .price-title {

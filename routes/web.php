@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\IndexController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage');
-});
-Route::get('/login', function () {
-    return view('auth.login');
-
-})->name('login');
-
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('register');
+Route::get('/', [IndexController::class, 'landingpage'])->name('landingpage');
+Route::get('artikel',[IndexController::class,'artikel'])->name('artikel');
+Route::get('detail', [IndexController::class, 'detailartikel'])->name('detailartikel');
+Route::get('harga', [IndexController::class, 'harga'])->name('harga');
+Route::get('faq', [IndexController::class, 'faq'])->name('faq');
+Route::get('/login', [IndexController::class, 'login'])->name('login');
+Route::get('/register', [IndexController::class, 'register'])->name('register');

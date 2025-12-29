@@ -482,7 +482,7 @@
                 <!-- Menu Tengah -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-lg-start">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Beranda</a>
+                        <a class="nav-link" href="{{route('landingpage')}}">Beranda</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -491,17 +491,17 @@
                             Layanan
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Layanan 1</a></li>
-                            <li><a class="dropdown-item" href="#">Layanan 2</a></li>
+                            <li><a class="dropdown-item" href="#layanan1">Layanan 1</a></li>
+                            <li><a class="dropdown-item" href="#layanan2">Layanan 2</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Fitur</a>
+                        <a class="nav-link" href="#fitur">Fitur</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="{{route('artikel')}}">Blog</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -518,21 +518,19 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Harga</a>
+                        <a class="nav-link" href="{{route('harga')}}">Harga</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="{{route('faq')}}">FAQ</a>
                     </li>
                 </ul>
 
                 <!-- Login -->
                 <div class="text-lg-end">
-                    <a href="#" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
+                    <a href="{{route('login')}}" class="btn btn-outline-light px-4 ms-lg-3 fw-semibold rounded-pill btn-login">
                         Login
                     </a>
-
-
 
                 </div>
 
@@ -635,7 +633,7 @@
                                     <a class="btn btn-gold px-4 py-2 fw-semibold rounded-pill">
                                         Coba Sekarang
                                     </a>
-                                    
+
                                     <a class="btn btn-outline-light px-4 py-2 fw-semibold rounded-pill px-4">
                                         Lihat Fitur
                                     </a>
@@ -721,6 +719,7 @@
         </div>
     </section>
 
+    <section id="fitur">
     <section class="superior-features py-5 mb-5">
         <div class="container">
             <h2 class="fw-bold text-white text-center mb-5">
@@ -774,9 +773,9 @@
                     </div>
 
                 </div>
-
             </div>
         </div>
+    </section>
     </section>
     <br><br><br>
     <section class="price mb-5">
@@ -820,7 +819,7 @@
 
                 <!-- Button -->
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                    <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+                    <a href="{{route('harga')}}" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
                 </div>
             </div>
     </section>
@@ -832,7 +831,7 @@
             <h2 class="text-center fw-bold mb-5">Layanan Kami</h2>
 
             <!-- ITEM 1 -->
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-5" id="layanan1">
                 <!-- Gambar utama -->
                 <div class="col-12 col-md-6 position-relative mb-4 mb-md-0">
                     <img src="{{ asset('image/layanan1.png') }}" class="img-fluid rounded-4 shadow-sm"
@@ -857,7 +856,7 @@
 
 
             <!-- ITEM 2 (ZIGZAG) -->
-            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+            <div class="row align-items-center mb-5 flex-lg-row-reverse" id="layanan2">
                 <div class="col-lg-6 position-relative mb-4 mb-lg-0">
                     <img src="{{ asset('image/layanan2.png') }}" class="img-fluid rounded-4 shadow-sm"
                         alt="">
@@ -1157,7 +1156,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center align-items-center mt-3">
-                    <a href="" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
+                    <a href="{{route('faq')}}" class="btn btn-gold rounded-pill px-4">Selengkapnya</a>
 
                 </div>
             </div>

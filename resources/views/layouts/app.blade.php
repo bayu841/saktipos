@@ -39,20 +39,19 @@
             font-weight: 500;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
+
         .btn-outline-dark-custom {
-    background-color: transparent;
-    border: 1.5px solid #000000;
-    color: #000000;
-    font-weight: 500;
-}
+            background-color: transparent;
+            border: 1.5px solid #000000;
+            color: #000000;
+            font-weight: 500;
+        }
 
-.btn-outline-dark-custom:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border-color: #000000;
-}
-
-
+        .btn-outline-dark-custom:hover {
+            background-color: #CDA93F;
+            color: #ffffff;
+            border-color: #CDA93F;
+        }
 
         footer {
             background-color: #CDA93F;
@@ -89,20 +88,20 @@
 
                 <!-- Menu Tengah -->
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4 text-lg-start">
-                    <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('landingpage')}}">Beranda</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Layanan
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Layanan 1</a></li>
-                            <li><a class="dropdown-item" href="#">Layanan 2</a></li>
+                            <li><a class="dropdown-item" href="/#layanan1">Layanan 1</a></li>
+                            <li><a class="dropdown-item" href="/#layanan2">Layanan 2</a></li>
                             <li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Fitur</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#fitur">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('artikel')}}">Blog</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -114,15 +113,15 @@
                             <li><a class="dropdown-item" href="#">Bisnis Keuangan</a></li>
                             <li><a class="dropdown-item" href="#">Bisnis Beauty</a></li>
                         </ul>
-                    <li class="nav-item"><a class="nav-link" href="#">Harga</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('harga')}}">Harga</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('faq')}}">FAQ</a></li>
                 </ul>
                 </li>
                 <!-- Login (masuk ke responsif juga) -->
                 <div class=" text-lg-end">
-                    <a href="#" class="btn btn-outline-dark-custom px-4 ms-lg-3 fw-semibold rounded-pill">
-    Login
-</a>
+                    <a href="{{route('login')}}" class="btn btn-outline-dark-custom px-4 ms-lg-3 fw-semibold rounded-pill">
+                        Login
+                    </a>
 
                 </div>
 
