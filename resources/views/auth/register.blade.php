@@ -134,7 +134,7 @@
 
                     <p class="text-center mt-3 register-register-text">
                         Sudah punya akun?
-                        <a href="#" class="register-register-link">Login di sini</a>
+                        <a href="{{route('login')}}" class="register-register-link">Login di sini</a>
                     </p>
                 </div>
             </div>
