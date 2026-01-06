@@ -57,6 +57,7 @@
             border-radius: 50px;
             padding: 14px;
             font-weight: 600;
+            font-size: 17px;
         }
 
         .login-btn:hover {
@@ -80,7 +81,7 @@
 
         .login-register-link {
             color: #000000;
-            font-weight: 700;
+            font-weight: bold;
             text-decoration: underline;
         }
     </style>
